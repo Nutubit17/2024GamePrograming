@@ -4,10 +4,30 @@
     <Filter Include="Test">
       <UniqueIdentifier>{e3d09c9b-c6fd-4426-bbdc-f054159d1cec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="HW">
+      <UniqueIdentifier>{5fc99696-da72-4a07-9adb-fba769580076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW\SourceFile">
+      <UniqueIdentifier>{5a72ec21-18c2-4932-a217-1c030c1845cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW\HeaderFile">
+      <UniqueIdentifier>{e89e0c4a-e0d7-43ba-8ee3-2edc3998834f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>HW\SourceFile</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>HW\SourceFile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Character.h">
+      <Filter>HW\HeaderFile</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
