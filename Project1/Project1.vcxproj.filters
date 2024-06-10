@@ -1,33 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Test">
-      <UniqueIdentifier>{e3d09c9b-c6fd-4426-bbdc-f054159d1cec}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="HW">
-      <UniqueIdentifier>{5fc99696-da72-4a07-9adb-fba769580076}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="HW\SourceFile">
-      <UniqueIdentifier>{5a72ec21-18c2-4932-a217-1c030c1845cb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="HW\HeaderFile">
-      <UniqueIdentifier>{e89e0c4a-e0d7-43ba-8ee3-2edc3998834f}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="AdditionalMath.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Defines.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="IFlag.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemList.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueue.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareMap.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
     <ClCompile Include="Main.cpp">
-      <Filter>Test</Filter>
+      <Filter>Logic</Filter>
     </ClCompile>
-    <ClCompile Include="File.cpp">
-      <Filter>HW\SourceFile</Filter>
-    </ClCompile>
-    <ClCompile Include="Character.cpp">
-      <Filter>HW\SourceFile</Filter>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Etc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Character.h">
-      <Filter>HW\HeaderFile</Filter>
+    <ClInclude Include="AdditionalMath.h">
+      <Filter>Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="IFlag.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemList.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueue.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareMap.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="IncludePack.h">
+      <Filter>Require</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Etc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{ed613223-7ca9-4a25-a87c-f382a27b1b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{a5519d49-6ab5-4b7f-8764-ee968da62ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Require">
+      <UniqueIdentifier>{0a3df1de-7cd9-429b-8bd1-cf1fc043c042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Etc">
+      <UniqueIdentifier>{0b4eaea6-a80b-4627-8f9c-1971921bf2c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{51542798-aa2b-4e4c-a1f2-074ff022d28a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
