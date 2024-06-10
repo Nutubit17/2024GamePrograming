@@ -17,7 +17,6 @@ int main()
 		{"Player5",  50, 50},
 		{"Player6",  70, 35},
 		{"Player7",  90, 25},
-		{"Player8",  40, 60}
 	};
 
 #pragma region	WriteFile
@@ -55,4 +54,7 @@ int main()
 	}
 
 #pragma endregion
+
+
+
 }
