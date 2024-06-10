@@ -1,0 +1,20 @@
+#pragma once
+void FullScreen();
+void FullScreenWithNoLabel();
+void NoLabelScreen();
+void DisableEditMode();
+BOOL SetConsoleBounds(int x, int y, int width, int height, bool clear = false);
+void ShowConsole();
+void HideConsole();
+void Gotoxy(int _x, int _y);
+BOOL Gotoxytest(int _x, int _y);
+COORD CursorPos();
+void SetCursorVis(bool _vis, DWORD _size);
+void SetColor(int _textcolor=15, int _bgcolor=0);
+int GetColor();
+void LockResize();
+COORD GetConsoleResolution();
+COORD GetDesktopResolution();
+void FrameSync(unsigned int _framerate);
+void SetMode(bool returnMode);
+void SetFontSize(int _size);
