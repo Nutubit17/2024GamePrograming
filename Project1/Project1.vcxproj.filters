@@ -34,6 +34,15 @@
     <ClCompile Include="Unit.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>HW</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>HW</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>HW</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdditionalMath.h">
@@ -69,6 +78,12 @@
     <ClInclude Include="Unit.h">
       <Filter>Etc</Filter>
     </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>HW</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>HW</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
@@ -86,5 +101,18 @@
     <Filter Include="Logic">
       <UniqueIdentifier>{51542798-aa2b-4e4c-a1f2-074ff022d28a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="HW">
+      <UniqueIdentifier>{79da6bff-55bf-435d-9662-a7e459c6a602}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StartingCharacter.text">
+      <Filter>HW</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="enemy.txt">
+      <Filter>HW</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -1,13 +1,11 @@
 #pragma once
-#include <fstream>
-#include <string>
-using std::string;
-
+#include "Includepack.h"
 struct Enemy
 {
-	string name;
-	int health;
+	string name = "";
+	int health = 0;
+	vector<string> shape = {};
 
-	void SaveToFile(std::ofstream& ofs) const;
-	void LoadFromFile(std::ifstream& ifs);
 };
+
+vector<Enemy> LoadEnemiesFromFile();

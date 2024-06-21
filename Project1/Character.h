@@ -1,14 +1,11 @@
 #pragma once
-#include <fstream>
-#include <string>
-using std::string;
+#include "IncludePack.h"
 
-struct Character 
+struct Character
 {
-	string name;
-	int health;
-	int attack;
+	string name = "";
+	int health = 0;
+	int attack = 0;
 
-	void SaveToFile(std::ofstream& ofs) const;
-	void LoadFromFile(std::ifstream& ifs);
+	void LoadFromFile(ifstream& ifs);
 };

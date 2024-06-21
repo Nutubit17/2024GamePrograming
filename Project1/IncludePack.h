@@ -8,14 +8,20 @@
 #include <string>
 #include <algorithm>
 
+#include <ostream>
+#include <fstream>
+
 #define _USE_MATH_DEFINES
 #include <math.h>
+
 
 
 using std::wcout;
 using std::wcin;
 using std::cout;
 using std::cin;
+using std::cerr;
+using std::noskipws;
 using std::endl;
 using std::to_string;
 
@@ -23,6 +29,8 @@ using std::sin;
 using std::vector;
 using std::string;
 using std::wstring;
+using std::ofstream;
+using std::ifstream;
 
 #undef max
 #undef min
@@ -83,3 +91,5 @@ struct ConsoleBounds
 #include "Defines.h"
 #include "AdditionalMath.h"
 #include "Console.h"
+#include "Character.h"
+#include "Enemy.h"

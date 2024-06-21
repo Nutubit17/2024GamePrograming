@@ -1,39 +1,13 @@
-#include <iostream>
-#include <vector>
-#include "Character.h"
-using std::ifstream;
-using std::ofstream;
-using std::vector;
-using std::cout;
+#include "IncludePack.h"
 
 int main()
 {
 	std::ios_base::sync_with_stdio(false);
 
-	vector<Character> characters = {
-		{"Player1", 100, 20},
-		{"Player2",  80, 30},
-		{"Player4",  60, 40},
-		{"Player5",  50, 50},
-		{"Player6",  70, 35},
-		{"Player7",  90, 25},
-	};
-
-#pragma region	WriteFile
-
-	std::ofstream writeFile("StartingCharacter.text", std::ios_base::out);
-
-	for (const auto& character : characters) 
-	{
-		character.SaveToFile(writeFile);
-	}
-	writeFile.close();
-
-#pragma endregion
 
 #pragma region	LoadFile
 
-	ifstream loadFile("StartingCharacter.text");
+	ifstream loadFile("StartingCharacter.txt");
 
 	vector<Character> characterInfo;
 	Character character;
@@ -57,4 +31,26 @@ int main()
 
 
 
+#pragma region LoadFileEnemy
+
+	vector<Enemy> loadedEnemies = LoadEnemiesFromFile();
+
+	SetConsoleOutputCP(CP_UTF8);
+
+	// 적 정보 출력
+	for (const Enemy& enemy : loadedEnemies)
+	{
+		cout << "Name: " << enemy.name << "\n";
+		cout << "Health: " << enemy.health << "\n";
+		cout << "Shape:\n";
+
+		for (const string& line : enemy.shape)
+		{
+			cout << line << endl;
+		}
+
+		cout << "\n";
+	}
+
+#pragma endregion
 }
