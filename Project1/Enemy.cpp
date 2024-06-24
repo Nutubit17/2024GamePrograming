@@ -19,7 +19,7 @@ vector<Enemy> LoadEnemiesFromFile()
                 string line;
                 getline(ifs, line); // 한 줄씩 읽어와 문자열로 저장
                 enemy.shape.push_back(line);
-            }
+            }   
             enemies.push_back(enemy);
         }
         ifs.close();

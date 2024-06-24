@@ -53,4 +53,22 @@ int main()
 	}
 
 #pragma endregion
+
+	const string filename = "highscores.txt";
+
+	// 최고 점수 로드
+	vector<HighScore> highScores = LoadAllHighScore(filename);
+
+	// 새로운 점수 추가
+	AddHighScore(highScores, 9, filename);
+	AddHighScore(highScores, 5, filename);
+	AddHighScore(highScores, 1, filename);
+	AddHighScore(highScores, 0, filename);
+
+
+	for (const auto& hs : highScores)
+	{
+		cout << hs.number << " " << hs.score << endl;
+	}
+
 }

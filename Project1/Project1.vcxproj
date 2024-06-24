@@ -134,6 +134,7 @@
     <ClCompile Include="Dialog.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="File.cpp" />
+    <ClCompile Include="HighScore.cpp" />
     <ClCompile Include="IFlag.cpp" />
     <ClCompile Include="ItemList.cpp" />
     <ClCompile Include="Logic.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="Defines.h" />
     <ClInclude Include="Dialog.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="HighScore.h" />
     <ClInclude Include="IFlag.h" />
     <ClInclude Include="IncludePack.h" />
     <ClInclude Include="ItemList.h" />
@@ -161,10 +163,9 @@
     <ClInclude Include="Unit.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="StartingCharacter.text" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="enemy.txt" />
+    <Text Include="HighScoreReaderBoard.txt" />
+    <Text Include="StartingCharacter.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

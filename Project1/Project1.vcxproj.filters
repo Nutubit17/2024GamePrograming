@@ -34,14 +34,17 @@
     <ClCompile Include="Unit.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
-    <ClCompile Include="Character.cpp">
-      <Filter>HW</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>HW</Filter>
-    </ClCompile>
     <ClCompile Include="File.cpp">
       <Filter>HW</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>HW\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>HW\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="HighScore.cpp">
+      <Filter>HW\HighScore</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -79,10 +82,13 @@
       <Filter>Etc</Filter>
     </ClInclude>
     <ClInclude Include="Character.h">
-      <Filter>HW</Filter>
+      <Filter>HW\Character</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.h">
-      <Filter>HW</Filter>
+      <Filter>HW\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="HighScore.h">
+      <Filter>HW\HighScore</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -104,15 +110,28 @@
     <Filter Include="HW">
       <UniqueIdentifier>{79da6bff-55bf-435d-9662-a7e459c6a602}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="StartingCharacter.text">
-      <Filter>HW</Filter>
-    </None>
+    <Filter Include="HW\File">
+      <UniqueIdentifier>{a28bb9d1-df3b-46b4-a4ef-9d6af61b02ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW\Character">
+      <UniqueIdentifier>{9a8d36e5-9e61-49b1-80de-303ded98a05f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW\Enemy">
+      <UniqueIdentifier>{474a5d4a-c907-402c-91e2-5f1591d09223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW\HighScore">
+      <UniqueIdentifier>{7f18f14b-3356-4ca7-a81e-b632bd3b76e0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="enemy.txt">
-      <Filter>HW</Filter>
+      <Filter>HW\File</Filter>
+    </Text>
+    <Text Include="HighScoreReaderBoard.txt">
+      <Filter>HW\File</Filter>
+    </Text>
+    <Text Include="StartingCharacter.txt">
+      <Filter>HW\File</Filter>
     </Text>
   </ItemGroup>
 </Project>

@@ -93,3 +93,4 @@ struct ConsoleBounds
 #include "Console.h"
 #include "Character.h"
 #include "Enemy.h"
+#include "HighScore.h"
