@@ -9,3 +9,5 @@ struct Character
 
 	void LoadFromFile(ifstream& ifs);
 };
+
+vector<Character> LoadCharactersFromFile();

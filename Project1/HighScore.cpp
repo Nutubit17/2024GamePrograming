@@ -5,10 +5,10 @@ void HighScore::SaveToFile(ofstream& ofs) const
     ofs << number << " " << score << endl;
 }
 
-vector<HighScore> LoadAllHighScore(const string& filename)
+vector<HighScore> LoadAllHighScore()
 {
     vector<HighScore> highScores;
-    ifstream ifs(filename);
+    ifstream ifs("HighScoreReaderBoard.txt");
     if (ifs.is_open())
     {
         HighScore hs;
@@ -21,9 +21,9 @@ vector<HighScore> LoadAllHighScore(const string& filename)
     return highScores;
 }
 
-void SaveAllHighScores(const vector<HighScore>& highScores, const string& filename)
+void SaveAllHighScores(const vector<HighScore>& highScores)
 {
-    ofstream ofs(filename);
+    ofstream ofs("HighScoreReaderBoard.txt");
     if (ofs.is_open())
     {
         for (const auto& hs : highScores)
@@ -58,6 +58,8 @@ void AddHighScore(vector<HighScore>& highScores, int score)
             highScores[i].number = i + 1;
         }
     }
+
+    SaveAllHighScores(highScores, score);
 }
 
 bool CompareScores(const HighScore& a, const HighScore& b)

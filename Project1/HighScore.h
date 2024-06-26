@@ -10,8 +10,8 @@ struct HighScore
     void SaveToFile(ofstream& ofs) const;
 };
 
-vector<HighScore> LoadAllHighScore(const string& filename);
-void SaveAllHighScores(const vector<HighScore>& highScores, const string& filename);
+vector<HighScore> LoadAllHighScore();
+void SaveAllHighScores(const vector<HighScore>& highScores);
 void AddHighScore(vector<HighScore>& highScores, int score);
 bool CompareScores(const HighScore& a, const HighScore& b);
 int GetHighestScore(const vector<HighScore>& highScores);
