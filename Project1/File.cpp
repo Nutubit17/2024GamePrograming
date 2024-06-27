@@ -1,11 +1,9 @@
 #include "IncludePack.h"
 
-int main()
+
+void FileSystem()
 {
-	std::ios_base::sync_with_stdio(false);
-
-
-#pragma region	LoadCharacter
+	#pragma region	LoadCharacter
 	vector<Character> characterInfo = LoadCharactersFromFile(); // 캐릭터들 불러와서 담아주기
 
 	// 불러온 캐릭터 정보 출력
@@ -16,7 +14,7 @@ int main()
 
 #pragma endregion
 
-#pragma region LoadFileEnemy
+	#pragma region LoadFileEnemy
 
 	vector<Enemy> loadedEnemies = LoadEnemiesFromFile(2); // 0, 1, 2로 난이도 선택해서 불러오기 0은 하, 1은 중, 2는 상
 
@@ -40,7 +38,7 @@ int main()
 
 #pragma endregion
 
-#pragma region HighScoreLoad
+	#pragma region HighScoreLoad
 
 	// 최고 점수 로드
 	vector<HighScore> highScores = LoadAllHighScore();
@@ -54,12 +52,11 @@ int main()
 	SaveAllHighScores(highScores);
 
 
-	for (const auto& hs : highScores)
+	for (const HighScore& hs : highScores)
 	{
 		cout << hs.number << " " << hs.score << endl;
 	}
 #pragma endregion
 
-
-
+	
 }

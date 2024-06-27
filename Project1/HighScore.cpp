@@ -59,7 +59,7 @@ void AddHighScore(vector<HighScore>& highScores, int score)
         }
     }
 
-    SaveAllHighScores(highScores, score);
+    SaveAllHighScores(highScores);
 }
 
 bool CompareScores(const HighScore& a, const HighScore& b)

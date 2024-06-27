@@ -1,0 +1,5 @@
+Knight 100 60
+Archer 90 70
+Ranger 80 80
+Necromencer 70 90
+SpearMan 60 100
