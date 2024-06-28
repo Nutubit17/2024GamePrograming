@@ -23,8 +23,7 @@ void FileSystem()
 	// 적 정보 출력
 	for (const Enemy& enemy : loadedEnemies)
 	{
-		cout << "Name: " << enemy.name << "\n";
-		cout << "Health: " << enemy.health << "\n";
+		cout << "Time: " << enemy.addTime << "\n";
 		cout << "Difficulty: " << enemy.difficulty << "\n";
 		cout << "Shape:\n";
 

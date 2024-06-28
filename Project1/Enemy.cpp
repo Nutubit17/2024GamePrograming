@@ -9,7 +9,7 @@ vector<Enemy> LoadEnemiesFromFile(int difficulty)
         while (ifs.peek() != EOF) // 파일 끝까지 읽기
         {
             Enemy enemy;
-            ifs >> enemy.name >> enemy.health >> enemy.difficulty; // enemy의 이름, 체력, 난이도를 파일에서 읽어와 저장
+            ifs >> enemy.addTime >> enemy.difficulty; // enemy의 이름, 체력, 난이도를 파일에서 읽어와 저장
             ifs.ignore(); // 다음 데이터로 넘어갈때 발생하는 오류 방지 목적으로 새로운 줄 문자를 무시
 
             // 선택된 난이도와 일치하지 않는 적은 모양을 건너뜀
