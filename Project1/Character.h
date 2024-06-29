@@ -7,7 +7,8 @@ struct Character
 	int health = 0;
 	int attack = 0;
 
-	void LoadFromFile(ifstream& ifs);
+	BOOL LoadFromFile(ifstream& ifs);
 };
 
 vector<Character> LoadCharactersFromFile();
+

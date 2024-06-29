@@ -1,10 +1,13 @@
 #pragma once
-#include "Includepack.h"
+#include "IncludePack.h"
+
 struct Enemy
 {
 	int addTime = 0;
 	int difficulty = 0;
 	vector<string> shape = {};
+
+	BOOL LoadFromFile(ifstream& ifs);
 
 };
 

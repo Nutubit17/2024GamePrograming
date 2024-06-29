@@ -1,27 +1,25 @@
 #include "Character.h"
 
-void Character::LoadFromFile(std::ifstream& ifs) {
-    ifs >> name >> health >> attack;
+BOOL Character::LoadFromFile(std::ifstream& ifs) {
+	return (bool)(ifs >> name >> health >> attack);
 }
 
 vector<Character> LoadCharactersFromFile()
 {
-    vector<Character> characterInfo;
-    ifstream loadFile("StartingCharacter.txt");
+	vector<Character> characterInfo;
+	ifstream loadFile("TextFile\\StartingCharacter.txt");
 
-    if (loadFile.is_open()) {
-        while (!loadFile.eof()) {
-            Character character;
-            character.LoadFromFile(loadFile);
-            if (loadFile) {
-                characterInfo.push_back(character);
-            }
-        }
-        loadFile.close();
-    }
-    else {
-        cerr << "An error occurred when opening the file." << endl;
-    }
+	if (!loadFile.is_open()) return characterInfo;
 
-    return characterInfo;
+	while (true)
+	{
+		Character character;
+		if (!character.LoadFromFile(loadFile)) break;
+
+		characterInfo.push_back(character);
+	}
+
+	loadFile.close();
+
+	return characterInfo;
 }

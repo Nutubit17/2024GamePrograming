@@ -8,14 +8,13 @@ void HighScore::SaveToFile(ofstream& ofs) const
 vector<HighScore> LoadAllHighScore()
 {
     vector<HighScore> highScores;
-    ifstream ifs("HighScoreReaderBoard.txt");
+    ifstream ifs("TextFile\\HighScoreReaderBoard.txt");
     if (ifs.is_open())
     {
         HighScore hs;
         while (ifs >> hs.number >> hs.score)
-        {
             highScores.push_back(hs);
-        }
+
         ifs.close();
     }
     return highScores;
@@ -23,13 +22,12 @@ vector<HighScore> LoadAllHighScore()
 
 void SaveAllHighScores(const vector<HighScore>& highScores)
 {
-    ofstream ofs("HighScoreReaderBoard.txt");
+    ofstream ofs("TextFile\\HighScoreReaderBoard.txt");
     if (ofs.is_open())
     {
         for (const auto& hs : highScores)
-        {
             hs.SaveToFile(ofs);
-        }
+
         ofs.close();
     }
 }
@@ -52,8 +50,7 @@ void AddHighScore(vector<HighScore>& highScores, int score)
         highScores.push_back(newScore);
         sort(highScores.begin(), highScores.end(), CompareScores);
 
-        // 번호를 재정렬
-        for (size_t i = 0; i < highScores.size(); ++i)
+        for (int i = 0; i < highScores.size(); ++i)
         {
             highScores[i].number = i + 1;
         }
